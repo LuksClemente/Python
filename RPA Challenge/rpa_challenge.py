@@ -37,7 +37,7 @@ def setData(data, browser):
 
 service = Service(ChromeDriverManager().install())
 browser = webdriver.Chrome(service=service)
-data = pd.read_excel(r"E:\Documentos\LucasClemente\Projetos\Python RPA\challenge.xlsx", "Sheet1")
+data = pd.read_excel("challenge.xlsx", "Sheet1")
 
 
 initialize(browser)
