@@ -2,6 +2,8 @@
 
 ### URL: https://rpachallenge.com/
 
+![alt text](https://www.wianco.com/rpa-news-bilder/20201020-RPA-News-RPA-Challenge.png)
+
 ## Instruções:
 
 ### 1. O objetivo deste desafio é criar um fluxo que insira dados de uma planilha nos campos do formulário na tela.
