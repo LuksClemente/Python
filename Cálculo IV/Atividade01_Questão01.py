@@ -2,7 +2,7 @@
 #Lucas Silva Clemente
 
 #embora neste código nenhum método desta biblioteca esteja sendo usado diretamente
-#pode ser que o usuário queria usar na expressão de entrada. Ex: sqrt()
+#pode ser que o usuário queria usar na expressão de entrada. Ex: sqrt(), sin(), etc.
 import math
 
 #método que define a função do termo a[n] que será utilizada
@@ -46,15 +46,15 @@ def limiteSeq(maxN):
     
         oldLim = newLim
 
-    #se chegarmos ao limite de iterações, na realidade não podemos concluir se não existe ou é infinito
-    return "Fim da iteração, limite pode ser tanto infinito quanto inexistente" 
+    #se chegarmos ao limite de iterações, iremos supor que o limite tende a infinito
+    return "Infinito" 
 
 def main(): 
     
-    #define um limite máximo arbitrário, já que não podemos ter iterações infinitas
-    #assim como não podemos iterar até float("inf")
+    #define um limite máximo arbitrário
+    #não utilizei o loop infinito "while True" pois caso o limite seja de fato infinito ele nunca chegaria ao fim da iteração
     #é preferivel que seja escolhido um limite alto para maior confiabilidade dos resultados
-    #um limite muito baixo pode significar atingir o fim da iteração sem uma conclusão exata
+    #um limite muito baixo pode significar atingir o fim da iteração com uma conclusão incorreta
     #pode ser alterado ao seu critério
     maxN = 1000000000
 
@@ -63,13 +63,13 @@ def main():
 if __name__ == "__main__":
     main()
 
-#RESULTADOS DE ALGUNS TESTES
+#RESULTADOS DE ALGUNS TESTES (pode copiar e colar no prompt de entrada, se desejar)
 #-------------------------------------------------------------------------------------------------------
 # ENTRADA                           |   RESULTADO
 #-------------------------------------------------------------------------------------------------------
 # None                              |   Inexistente
 # float("inf")                      |   Infinito
-# n                                 |   Indicou que atingiu o fim da iteração, mas deveria ser infinito
+# n                                 |   Infinito (após ficar um bom tempo rodando até dar o resultado)
 # 1/(n**2)                          |   0.00
 # 1/(n + 1)                         |   0.00
 # (n + 1)/(3*n - 1)                 |   0.33
