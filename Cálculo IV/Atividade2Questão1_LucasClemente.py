@@ -17,9 +17,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #função que representa a equação diferencial do pêndulo
-#vetEestado = vetor na forma [θ, ω], sendo θ o ângulo e ω a velocidade angular
-#grav = aceleração da gravidade (m/s^2)
-#compr = comprimento do pêndulo (m)
+#vetEestado: vetor na forma [θ, ω], sendo θ o ângulo e ω a velocidade angular
+#grav: aceleração da gravidade (m/s^2)
+#compr: comprimento do pêndulo (m)
 def pendulo(vetEstado, grav, compr):
     
     theta, omega = vetEstado
